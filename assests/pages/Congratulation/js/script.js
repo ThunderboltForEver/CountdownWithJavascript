@@ -12,6 +12,5 @@ function changeColors () {
             }
         },1000);
 }
-window.onload = () => {
-setTimeout(changeColors(),500);
-}
+
+setTimeout(changeColors(),1000);

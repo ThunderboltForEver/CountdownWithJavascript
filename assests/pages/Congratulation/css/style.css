@@ -17,10 +17,20 @@ h1 {
     flex-direction: column;
     align-items: center;
 }
+@media ( max-width:767px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
 h1 span:first-child{
     color: green;
 }
 h1 span.heart {
     color: red;
     font-size: 84px;
+}
+@media ( max-width:767px) {
+    h1 span.heart {
+        font-size: 44px;
+    }
 }
