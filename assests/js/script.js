@@ -7,6 +7,7 @@ divElement.innerHTML = 10 ;
 let counter;
 buttonElement.onclick = () => {
    counter = setInterval(countdown,1000);
+   window.location.reload();
    }
 function countdown () {
    divElement.innerHTML -=1;
