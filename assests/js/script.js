@@ -6,8 +6,11 @@ divElement.style.cssText = "width:200px;height:200px;border-radius:50%;backgroun
 divElement.innerHTML = 10 ;
 let counter;
 buttonElement.onclick = () => {
+   if ( divElement.innerHTML === "0") {
+      divElement.innerHTML = 10;
+   }
    counter = setInterval(countdown,1000);
-   window.location.reload();
+   
    }
 function countdown () {
    divElement.innerHTML -=1;
@@ -16,7 +19,9 @@ function countdown () {
       clearInterval(counter);
       setTimeout(() => {
          window.open("assests/pages/Congratulation/index.html","_self");  
+         
       },1000);
+     
    }
 }
 
